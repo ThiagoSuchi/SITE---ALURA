@@ -1,0 +1,142 @@
+:root{
+    --cor-principal:#808287;
+    --cor-secundaria:#F0ECE5;
+    --botao-cinza:#0c72ad;
+    --cor-fundo:#010415;
+    --fonte-principal: 'Inter';
+}
+
+body { 
+   background-color: var(--cor-fundo);
+   color: var(--cor-principal);
+   font-family: var(--fonte-principal);
+   font-size: 16px;
+   font-weight: 400;
+}
+
+*{
+    margin: 0;font-weight: 400;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}   
+
+.container__botao {
+    background-color: var(--botao-cinza);
+    border-radius: 7px;
+    padding: 1em;
+    color: var(--cor-secundaria);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cor-principal);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-secundaria);
+    margin-bottom: 0.1em;/*A propriedade CSS margin-bottom define a margin area na parte inferior de um elemento. Um valor positivo coloca o valor mais longe de outros elementos vizinhos, enquanto um valor negativo, aproxima*/
+
+}
+
+.descricao__texto {
+    color: var(--cor-principal);
+}
+
+.secundario__botao {
+    display: inline-block; /*Com display: inline-block nós conseguimos definir uma largura (width) e altura (height) da mesma forma que conseguimos com o display: block, esse é o único comportamento que o inline-block herda do block.*/
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding:  2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos{
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.rodape {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+    margin: 24px 0; 
+    gap: 16px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+
+
+
+
+
+
